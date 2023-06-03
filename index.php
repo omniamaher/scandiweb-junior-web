@@ -41,7 +41,13 @@ $products = $productList->getProducts();
             <?php endif; ?>
         </div>
     <?php endforeach; ?>
-
+    
+     <!-- Mass Delete button disappears -->
+    <script>
+        setTimeout(() => {
+        document.querySelector('.delete-checkbox').style.display = 'none';
+    }, 1000);
+    </script>
 
     <script src="js/index.js"></script>
     <footer>
